@@ -2,24 +2,31 @@
 
 namespace Database\Seeders;
 
+use App\Models\Category;
 use App\Models\Statue;
 use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
 
-class StatuesSeeder extends Seeder
+class CategorySeeder extends Seeder
 {
     /**
      * Run the database seeds.
      */
     public function run(): void
     {
-        Statue::insert(
+        Category::insert(
             [
                 [
-                    'name'=> '',
+                    'title'=> 'Рисунок',
                 ],
                 [
-                    'name'=> '',
+                    'title'=> 'Акварель',
+                ],
+                [
+                    'title'=> 'Гуашь',
+                ],
+                [
+                    'title'=> 'Другое',
                 ],
             ]
         );
